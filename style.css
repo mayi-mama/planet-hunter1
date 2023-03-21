@@ -1,1 +1,6 @@
 @charset "UTF-8";
+
+body{
+    font-family: 'Exo', sans-serif, 'Noto Sans JP', Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo;
+}
