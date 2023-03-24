@@ -21,6 +21,9 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
+        <!--facebook-->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v16.0" nonce="6sPVzKOh"></script>
         <!--loading-animation-->
         <div class="loading">
             <div class="loading-animation">
@@ -103,8 +106,115 @@
             </div>
             <div class="scrolldown2"><span>Scroll</span></div>
         </section>
-        <main class="content"></main>
-        <footer class="footer"></footer>
+        <!--メインコンテント-->
+        <main class="content">
+            <!--story section-->
+            <section class="story" id="story">
+                <svg class="section-border-top" width="430" height="40" viewBox="0 0 430 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M430 40L0 40L47.8771 4.74073e-06L430 3.43323e-05L430 40Z" fill="black"/>
+                </svg>
+                <div class="container">
+                    <div class="story__body">
+                        <div class="story__columnwrap">
+                            <div class="story__column">
+                                <div class="story__desc">
+                                    <h2 class="primary-heading">STORY</h2>
+                                    <div class="story__title">
+                                        奪われた故郷の星を取り戻せ<br>
+                                        壮大なSFファンタジー
+                                    </div>
+                                    <div class="story__text">
+                                        <p>
+                                            銀河歴222年、惑星ネコチャンは、ボスネコ将軍の率いる軍の反乱により完全に制圧された。将軍の側近マンチカンは軍政府に従わない人間を辺境の星ニャゴーへ強制的に追放。食料や資源の乏しいニャゴーでは多くの難民が発生し飢餓に苦しんでいた。ニャゴーのスラム街で育った孤児の姉弟がいた。姉のミケと弟のタマは母親をボスネコ将軍に殺された事実を知る。母の復讐のため、そして故郷の惑星ネコチャンを奪還すべく、ミケとタマはいま行動に出る！
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="story__img">
+                                    <img src="assets/img/story.webp" alt="2人の女性">
+                                </div>
+                            </div>
+                            <div class="story__column">
+                                <div class="story__desc">
+                                    <div class="story__title">
+                                        隠された陰謀を暴け<br>
+                                        衝撃的な事実に驚愕
+                                    </div>
+                                    <div class="story__text">
+                                        <p>
+                                            ミケとタマはネコジャラシ作戦により軍政府の最新鋭の小型船チュールを奪うことに成功。チュールのハイテンションワープ星間航行により惑星ネコチャンへあとわずか３時間で到着という時、小惑星帯アビシニアンで謎の救難信号を受信する。意外にも信号の発信源はボスネコ将軍だった。彼は今にも絶えそうなかすれた声で「私はおまえたちミケとタマの父親なのだ」と語る。その瞬間、ミケとタマの育ての親同然で仲間のはずのホワイトオッドアイがタマの背中を刀で切り裂いたのだった......
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="story__img">
+                                    <img src="assets/img/story2.webp" alt="ゲームをする女性">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <svg  class="section-border-bottom" width="430" height="40" viewBox="0 0 430 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L430 0L382.123 40L0 40L0 0Z" fill="black"/>
+                </svg>
+            </section>
+            <!--cta1 section-->
+            <div class="cta cta--1">
+                <div class="container">
+                    <div class="cta__body">
+                        <h2 class="cta__title">ARE YOU READY TO FIGHT?</h2>
+                        <div class="cta__btn">
+                            <a href="#" class="btn">PLAY NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--trailer section-->
+            <section class="trailer" id="trailer">
+                <svg  class="section-border-top" width="430" height="40" viewBox="0 0 430 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M430 40.0001L0 40.0001L47.8771 0.000126811L430 0.000156403L430 40.0001Z" fill="#00FFF5"/>
+                </svg>
+                <div class="container">
+                    <div class="trailer__body">
+                       <h2 class="primary-heading primary-heading--color-revrese">TRAILER</h2>
+                       <div class="trailer__video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Lzofxb1vATw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                       </div>
+                    </div>
+                </div>
+                <svg  class="section-border-bottom" width="430" height="40" viewBox="0 0 430 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L430 0L382.123 40L0 40L0 0Z" fill="#00FFF5"/>
+                </svg>
+            </section>
+            <!--cta2 section-->
+            <div class="cta cta--2">
+                <div class="container">
+                    <div class="cta__body">
+                       <div class="cta__title">ARE YOU READY TO FIGHT?</div>
+                       <div class="cta__btn">
+                        <a href="#" class="btn">PLAY NOW</a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="snsShare">
+                    <ul class="snsShare__list">
+                        <li class="snsShare__item">
+                            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
+                        </li>
+                        <li class="snsShare__item">
+                            <a href="https://twitter.com/jjnoQ3to7XuIxoS?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-related="" data-show-screen-name="false" data-lang="ja" data-show-count="false">Follow @jjnoQ3to7XuIxoS</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </li>
+                        <li class="snsShare__item">
+                            <div class="line-it-button" data-lang="ja" data-type="share-b" data-env="REAL" data-url="https://developers.line.biz/ja/docs/line-social-plugins/install-guide/using-line-share-buttons/" data-color="default" data-size="small" data-count="false" data-ver="3" style="display: none;"></div>
+                            <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__copyright">©Necopon games</div>
+            </div>
+        </footer>
     <!--JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="js/script.js"></script>
