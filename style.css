@@ -1,6 +1,89 @@
 @charset "UTF-8";
 
+/*全体*/
+
+:root{
+    --main-color: #00FFF5;
+}
+
 body{
     font-family: 'Exo', sans-serif, 'Noto Sans JP', Arial, "Hiragino Kaku Gothic ProN",
     "Hiragino Sans", Meiryo;
+    background-color: #000000;
+    font-size: 16px;
+    color: #FFFFFF;
 }
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+/*レイアウト*/
+.container{
+    max-width: 1160px;
+    padding: 0px 30px;
+    margin: 0 auto;
+}
+
+/*見出し*/
+.primary-heading{
+    position: relative;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    color: var(--main-color);
+    margin-bottom: 70px;
+}
+
+.primary-heading::before{
+    display: inline-block;
+    position:absolute;
+    content:'';
+    bottom: -30px;
+    width: 80px;
+    height: 8px;
+    background-color: var(--main-color);
+}
+
+.primary-heading--color-revrese{
+    color: #000000;
+}
+
+.primary-heading--color-revrese::before{
+    color:#000000;
+}
+
+/*ボタン*/
+.btn{
+    display: inline-block;
+    position: relative;
+    width: 230px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height:1;
+    letter-spacing: 0.05em;
+    color: #000000;
+    background-color: var(--main-color);
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    transition: box-shadow 0.3s;
+}
+
+.btn:hover{
+    box-shadow: 0 0 18px 5px rgba(0, 255, 174, 0.6);
+}
+
+.btn--sm{
+    width: 164px;
+    font-size: 15px;
+    padding: 15px 0;
+}
+
