@@ -236,4 +236,88 @@ img{
 }
 
 /*グローバルナビゲーション*/
+.gnav__list{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.gnav__item{
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  color: var(--main-color);
+}
+
+.gnav__audio{
+  position: absolute;
+  right: 30px;
+  bottom: -10px;
+}
+
+.audioSwitch{
+  font-size: 13px;
+  line-height: 1;
+  color:#BFBFBF;
+  cursor: pointer;
+}
+
+.audioSwitch.on{
+  color:#FFFFFF;
+}
+
+.audioSwitch-icon{
+  font-size: 18px;
+  vertical-align: text-bottom;
+}
+
+/*メインビジュアル*/
+mv{
+  position:relative;
+  height: 100%;
+}
+
+.mv::after{
+  display: block;
+  position:absolute;
+  content:"";
+  right:0;
+  bottom:0;
+  width: 430px;
+  height: 40px;
+  background-image: url(assets/img/bg-line-bottom-black.svg); 
+}
+
+.mv__titleArea{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  color: #FFFFFF;
+  transform: translateY(-50%);
+}
+
+.mv__label{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  margin-bottom: 30px;
+}
+
+.mv__title{
+  font-size: 140px;
+  font-weight: 600;
+  line-height: 0.9;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+
+.mv__subtitle{
+  font-size: 34px;
+  line-height: 1;
+  letter-spacing: 1em;
+  margin-bottom: 50px;
+}
 

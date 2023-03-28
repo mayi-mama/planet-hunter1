@@ -19,5 +19,20 @@ $(window).resize(function () {
     $(".mv").height(windowHeight);
 });
 
-
+/*音声再生と停止*/
+    var audio = $("#js-audio").get(0);
+	var isPlaying = false;
+	$("#js-audio-play").on("click", function () {
+		if (isPlaying) {
+			audio.pause();
+		} else {
+			audio.play();
+		}
+	});
+	audio.onplaying = function() {
+		isPlaying = true;
+	};
+	audio.onpause = function() {
+		isPlaying = false;
+	};
 });
