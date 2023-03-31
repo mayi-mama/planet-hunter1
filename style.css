@@ -57,7 +57,7 @@ img{
 }
 
 .primary-heading--color-revrese::before{
-    color:#000000;
+    background-color:#000000;
 }
 
 /*ボタン*/
@@ -396,7 +396,7 @@ background:var(--main-color);
   display: flex;
   position: absolute;
   right:30px;
-  bottom: 40px;
+  bottom: 50px;
   overflow: hidden;
   align-items: center;
   width: 360px;
@@ -436,5 +436,61 @@ background:var(--main-color);
   color: var(--main-color);
 }
 
-/**/
+/*STORY*/
+.story{
+  color: #FFFFFF;
+  padding: 140px 0;
+  background-color: #000000;
+  background-image: url(assets/img/bg_story.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position: cover;
+}
+
+.story__columnwrap{
+  display: grid;
+  row-gap: 80px;
+}
+
+.story__column{
+  display: flex;
+  column-gap: 80px;
+  align-items: center;
+}
+
+.story__desc{
+  flex: 0 1 50%;
+}
+
+.story__title{
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  margin-bottom: 30px;
+}
+
+.story__text{
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+}
+
+.story__img{
+  flex: 1;
+  transform: skew(-5deg, 0deg);
+  box-shadow: 4px 4px var(--main-color);
+}
+
+.story__column:nth-child(2n){
+  flex-direction: row-reverse;
+}
+
+.story__column:nth-child(2n) .story__img{
+  transform: skew(5deg, 0deg);
+  box-shadow: -4px 4px var(--main-color);
+}
+
+
+
 
