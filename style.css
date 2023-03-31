@@ -391,3 +391,50 @@ background:var(--main-color);
 }
 
 
+/*ニュースボックスの描写*/
+.newsBox{
+  display: flex;
+  position: absolute;
+  right:30px;
+  bottom: 40px;
+  overflow: hidden;
+  align-items: center;
+  width: 360px;
+  line-height: 1;
+  border: solid 1px #00FFF5;
+  background-color: #000000;
+  padding: 0.5em 0;
+}
+
+.newsBox p{
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  white-space: nowrap;
+  animation-name: newsBox-animation;
+  margin: 0;
+  animation: newsBox-animation 10s linear infinite;
+}
+
+@keyframes newsBox-animation{
+  from {
+      transform: translateX(100%);
+  }
+  to  {
+      transform: translateX(-100%)
+  }
+}
+
+.newsBox__date{
+  margin-right: 1em;
+}
+
+.newsBox__body{
+  color: var(--main-color);
+}
+
+/**/
+
