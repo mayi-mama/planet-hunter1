@@ -497,7 +497,7 @@ background:var(--main-color);
   padding: 100px 0;
 }
 
-.cta::before{
+.cta--1::before{
   display: block;
   position:absolute;
   content:"";
@@ -560,3 +560,44 @@ background:var(--main-color);
   height: 100%;
 }
 
+/*cta2*/
+
+.cta{
+  position: relative;
+  padding: 100px 0;
+}
+
+.cta--2::before{
+  display:block;
+  position: absolute;
+  content: "";
+  top:0;
+  left:0;
+  width:430px;
+  height: 40px;
+  background-image: url(assets/img/bg-line-top-color.svg);
+}
+
+/*footer*/
+.footer{
+  background-color:#000000;
+  padding: 40px 30px;
+}
+
+.footer__inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.snsShare__list{
+  display:flex;
+  column-gap: 10px;
+}
+
+.footer__copyright{
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
