@@ -98,6 +98,12 @@ img{
   background-color: #000000;
 }
 
+.loading.hide {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 500ms;
+}
+
 .loading-animation{
   position: absolute;
   top:50%;
@@ -817,6 +823,5 @@ background:var(--main-color);
 
 .footer__copyright{
   font-size: 11px;
-
 }
 }
